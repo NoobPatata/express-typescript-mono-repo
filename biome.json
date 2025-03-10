@@ -1,0 +1,60 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "vcs": {
+        "enabled": false,
+        "clientKind": "git",
+        "useIgnoreFile": true,
+        "defaultBranch": "main"
+    },
+    "files": {
+        "ignoreUnknown": false,
+        "ignore": ["dist/**", "package-lock.json"]
+    },
+    "formatter": {
+        "enabled": true,
+        "formatWithErrors": false,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 120,
+        "lineEnding": "lf"
+    },
+    "organizeImports": {
+        "enabled": true
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "complexity": {
+                "noStaticOnlyClass": "off",
+                "noThisInStatic": "off"
+            },
+            "correctness": {
+                "noUnusedFunctionParameters": "error",
+                "noUnusedImports": "error",
+                "noUnusedVariables": "error"
+            },
+            "performance": {
+                "noBarrelFile": "error",
+                "noReExportAll": "error",
+                "useTopLevelRegex": "warn"
+            },
+            "style": {
+                "noYodaExpression": "error",
+                "useBlockStatements": "error",
+                "useCollapsedElseIf": "error",
+                "useDefaultSwitchClause": "error",
+                "useFilenamingConvention": "warn",
+                "useNamingConvention": "warn",
+                "useThrowNewError": "error",
+                "useThrowOnlyError": "error"
+            }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "single",
+            "semicolons": "always"
+        }
+    }
+}

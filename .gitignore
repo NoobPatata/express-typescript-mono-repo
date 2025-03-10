@@ -1,0 +1,7 @@
+# Ignore all Personal IDE configuration
+.idea/
+.vscode/
+
+.env
+**/dist/*
+node_modules/

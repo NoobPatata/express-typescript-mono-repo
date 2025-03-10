@@ -1,0 +1,36 @@
+{
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "incremental": true,
+        "target": "es2020",
+        "module": "nodenext",
+        "baseUrl": "./",
+        "outDir": "dist",
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "useUnknownInCatchVariables": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "allowUnusedLabels": true,
+        "allowUnreachableCode": false,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["node_modules", "**/node_modules/*", "**/dist/*"]
+}
